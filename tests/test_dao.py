@@ -144,7 +144,7 @@ def test_create_duplicate_constraints(neo4j_driver: Driver) -> None:
     "db, schema_db, expected_db",
     [
         (None, None, None),
-        ("test", "test", None),
+        ("test", "test", "test"),
         ("test1", "test2", "test1"),
     ],
 )

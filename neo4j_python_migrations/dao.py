@@ -20,7 +20,7 @@ class MigrationDAO:
         self.driver = driver
         self.project = project
         self.schema_database = schema_database
-        self.database = None if database == schema_database else database
+        self.database = database
         self.baseline = "BASELINE"
 
     @cached_property
